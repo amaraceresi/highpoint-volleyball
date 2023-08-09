@@ -1,0 +1,46 @@
+
+body, html {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../../images/volleyball.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 34px; 
+  margin-bottom: 20px;
+  color: rgb(26, 3, 89);
+  font-family: 'Teko', sans-serif; 
+  text-align: center; 
+}
+
+.submitBtn {
+  padding: 10px;
+  background-color: rgb(20, 1, 72);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: rgb(0, 0, 139);
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}

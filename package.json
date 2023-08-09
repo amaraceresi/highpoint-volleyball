@@ -1,0 +1,37 @@
+{
+  "name": "highpoint-volleyball",
+  "version": "1.0.0",
+  "description": "Group 5 Project 3 proposal",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js --ignore client",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaraceresi/volleyball-net.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.14",
+    "@apollo/server": "^4.7.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@mui/icons-material": "^5.14.3",
+    "@stripe/stripe-js": "^1.54.2",
+    "apollo-server-express": "^3.6.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.1.8",
+    "react-swipeable-views-utils": "^0.14.0",
+    "stripe": "^12.6.0"
+  }
+}
