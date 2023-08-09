@@ -3,7 +3,7 @@ import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../../graphql/mutations";
 import { useDispatch, useSelector } from "react-redux";
 import { setAuthenticatedUser, getUser } from "../../redux/slices/userSlice";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 
 import Page from "../../components/Page";
 import AuthService from "../../utils/auth";
@@ -60,7 +60,7 @@ export default function Login() {
     <Page isProtected={false} headContent={headContent}>
       <div className="login-container">
         <div className="container">
-          <div className="title">Login</div>
+          <div className="title">Log in</div>
           <form className="form" onSubmit={handleFormSubmit}>
             <input
               placeholder="Email"
@@ -82,14 +82,16 @@ export default function Login() {
               </button>
             ) : (
               <button type="submit" className="submitBtn">
-                Login
+                Log in
               </button>
             )}
           </form>
           {error && <div className="error">{error.message}</div>}
+          <div className="signup-prompt">
+            Don't have an account? <Link to="/signup">Sign up today!</Link>
+          </div>
         </div>
       </div>
     </Page>
   );
 }
-

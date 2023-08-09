@@ -3,7 +3,7 @@ import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../../graphql/mutations";
 import { useSelector } from "react-redux";
 import { getUser } from "../../redux/slices/userSlice";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 import Page from "../../components/Page";
 import AuthService from "../../utils/auth";
 import './Signup.css';
@@ -31,7 +31,6 @@ export default function SignUp() {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-
     setFormState({
       ...formState,
       [name]: value,
@@ -40,34 +39,26 @@ export default function SignUp() {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+    const { data, errors } = await addUser({
+      variables: { ...formState },
+    });
 
-    try {
-      const { data, errors } = await addUser({
-        variables: { ...formState },
-      });
-
-      if (errors) {
-        console.error('Mutation errors:', errors);
-        return;
-      }
-
-      console.log('Mutation response:', data);
-
-      if (!data || !data.addUser) {
-        console.error('No data returned from mutation');
-        return;
-      }
-
-      const { token, user } = data.addUser;
-      if (!token) {
-        console.error('No token returned from mutation');
-        return;
-      }
-
-      AuthService.login(token);
-    } catch (e) {
-      console.error(e);
+    if (errors) {
+      console.error('Mutation errors:', errors);
+      return;
     }
+    
+    if (!data || !data.addUser) {
+      console.error('No data returned from mutation');
+      return;
+    }
+
+    const { token } = data.addUser;
+    if (!token) {
+      console.error('No token returned from mutation');
+      return;
+    }
+    AuthService.login(token);
   };
 
   if (isAuthenticated) {
@@ -114,14 +105,17 @@ export default function SignUp() {
               </button>
             ) : (
               <button type="submit" className="submitBtn">
-                Submit
+                Create Account
               </button>
             )}
           </form>
           {error && <h3>{error.message}</h3>}
+          <p className="login-prompt">
+            Already have an account? 
+            <Link to="/login">Log in</Link>
+          </p>
         </div>
       </div> 
     </Page>
   );
 }
-

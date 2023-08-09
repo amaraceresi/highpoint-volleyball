@@ -67,7 +67,7 @@ function BulletinBoard() {
     <Paper elevation={3} sx={{ padding: 2 }}>
       <Typography variant="h6">Upcoming News:</Typography>
       <List>
-        <ListItem>Due to unexpected weather conditions, today's beach volleyball practice has been cancelled. Stay safe and see you at the next scheduled practice!</ListItem>
+        <ListItem>Due to unexpected weather conditions, today's volleyball practice has been cancelled. Stay safe and see you at the next scheduled practice!</ListItem>
         <Divider />
         <ListItem>Register for Summer Slam closing 8/8</ListItem>
       </List>
@@ -103,7 +103,7 @@ const HomePage = () => {
       <Box sx={{ marginX: '5%', paddingY: 3 }}>
         <Grid container spacing={3}>
           <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
-            <Button variant="contained" color="primary">
+            <Button variant="contained" color="primary" href="/login">
               Register Here
             </Button>
           </Grid>
