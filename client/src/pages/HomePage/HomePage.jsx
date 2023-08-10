@@ -13,6 +13,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import insta from '../../images/insta.jpg';
 import insta2 from '../../images/insta2.jpg';
 import court2 from '../../images/court2.jpeg';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 const ImageSlideshow = () => {
   const images = [insta, insta2, court2];
@@ -63,28 +65,34 @@ function YouTube() {
 }
 
 function BulletinBoard() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <Paper elevation={3} sx={{ padding: 2 }}>
       <Typography variant="h6">Upcoming News:</Typography>
       <List>
-        <ListItem>Due to unexpected weather conditions, today's volleyball practice has been cancelled. Stay safe and see you at the next scheduled practice!</ListItem>
+        <ListItem sx={{ fontSize: isSmallScreen ? '0.8rem' : '1rem' }}>Due to unexpected weather conditions, today's volleyball practice has been cancelled. Stay safe and see you at the next scheduled practice!</ListItem>
         <Divider />
-        <ListItem>Register for Summer Slam closing 8/8</ListItem>
+        <ListItem sx={{ fontSize: isSmallScreen ? '0.8rem' : '1rem' }}>Register for Summer Slam closing 8/8</ListItem>
       </List>
     </Paper>
   );
 }
 
 function MiniCalendar() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <Paper elevation={3} sx={{ padding: 2, marginTop: 2 }}>
       <Typography variant="h6">Upcoming Events:</Typography>
       <List>
-        <ListItem>Summer Slam 8/10</ListItem>
+        <ListItem sx={{ fontSize: isSmallScreen ? '0.8rem' : '1rem' }}>Summer Slam 8/10</ListItem>
         <Divider />
-        <ListItem>Monday Night Mashup 8/14</ListItem>
+        <ListItem sx={{ fontSize: isSmallScreen ? '0.8rem' : '1rem' }}>Monday Night Mashup 8/14</ListItem>
         <Divider />
-        <ListItem>Freedom Fest 8/25</ListItem>
+        <ListItem sx={{ fontSize: isSmallScreen ? '0.8rem' : '1rem' }}>Freedom Fest 8/25</ListItem>
       </List>
     </Paper>
   );
