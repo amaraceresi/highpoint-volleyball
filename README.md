@@ -2,6 +2,9 @@
 
 ## Table of Contents
 
+![Screenshot of Highpoint Volleyball](client/src/images/screenshot.png)
+
+
 - [Description](#description)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
