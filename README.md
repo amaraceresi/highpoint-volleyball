@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Highpoint Grove Beach Volleyball
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Description](#description)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Contribution](#contribution)
+- [License](#license)
+- [Screenshots](#screenshots)
+- [Links](#links)
+- [Authors](#authors)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Highpoint Grove Beach Volleyball is a platform designed for locals in Smiths Grove, Kentucky, to sign up and participate in youth beach volleyball tournaments. It offers an interactive and user-friendly interface for players to choose and register for tournaments in their age group and pay online.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- View a calendar filled with tournaments for all ages.
+- Pick a date, register, and pay your player fee online.
+- Interactive and responsive design.
+- Payment platform integration for online payment.
+- User authentication using JWT.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- MERN Stack (MongoDB, Express.js, React, Node.js)
+- GraphQL
+- Material UI
+- Apollo Client
+- Google Map API
+- Full Calendar API
+- Stripe
+- Deployed on Heroku
 
-### `npm run build`
+## Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React for the front end.
+- GraphQL with a Node.js and Express.js server.
+- MongoDB and the Mongoose ODM for the database.
+- Responsive and polished UI.
+- Authentication (JWT).
+- Sensitive API key protection on the server.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository: `git clone <repository-link>`
+2. Navigate to the project directory: `cd highpoint-volleyball`
+3. Install the dependencies: `npm install`
+4. Start the server: `npm run develop`
+5. Open your browser and navigate to `http://localhost:3000`
 
-### `npm run eject`
+## Contribution
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+Include some screenshots of your app here.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Links
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Deployed Link](<https://aqueous-lake-05128-c423d9ea8df1.herokuapp.com/>)
+- [GitHub Repository](<[link-to-github-repository](https://github.com/amaraceresi/highpoint-volleyball)>)
 
-### Code Splitting
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Developed by: Amara Ceresi, Beverly Long, Jackson Smith, and Stephanie Ferguson
