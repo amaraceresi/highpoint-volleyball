@@ -1,9 +1,8 @@
 # Highpoint Grove Beach Volleyball
 
-## Table of Contents
-
 ![Screenshot of Highpoint Volleyball](client/src/images/screenshot.png)
 
+## Table of Contents
 
 - [Description](#description)
 - [Features](#features)
