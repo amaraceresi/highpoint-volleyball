@@ -9,7 +9,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import HomePage from "./pages/HomePage/HomePage";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
-// import Tournaments from "./pages/Tournaments/Tournaments";
+import Tournaments from "./pages/Tournaments/Tournaments";
 import Register from "./pages/Register/Register";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -66,7 +66,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                {/* <Route path="/tournaments" element={<Tournaments />} /> */}
+                <Route path="/tournaments" element={<Tournaments />} />
                 <Route path="/location" element={<Location />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/register/:tournamentId/:ageDivisionId" element={<Register />} />
