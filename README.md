@@ -7,7 +7,6 @@
 - [Description](#description)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Requirements](#requirements)
 - [Installation](#installation)
 - [Contribution](#contribution)
 - [License](#license)
@@ -35,15 +34,6 @@ Highpoint Grove Beach Volleyball is a platform designed for locals in Smiths Gro
 - Full Calendar API
 - Stripe
 - Deployed on Heroku
-
-## Requirements
-
-- React for the front end.
-- GraphQL with a Node.js and Express.js server.
-- MongoDB and the Mongoose ODM for the database.
-- Responsive and polished UI.
-- Authentication (JWT).
-- Sensitive API key protection on the server.
 
 ## Installation
 
