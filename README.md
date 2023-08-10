@@ -9,7 +9,6 @@
 - [Installation](#installation)
 - [Contribution](#contribution)
 - [License](#license)
-- [Screenshots](#screenshots)
 - [Links](#links)
 - [Authors](#authors)
 
@@ -19,9 +18,8 @@ Highpoint Grove Beach Volleyball is a platform designed for locals in Smiths Gro
 
 ## Features
 
-- View a calendar filled with tournaments for all ages.
+- View a calendar filled with tournaments for ages 12-16.
 - Pick a date, register, and pay your player fee online.
-- Interactive and responsive design.
 - Payment platform integration for online payment.
 - User authentication using JWT.
 
@@ -55,20 +53,16 @@ Highpoint Grove Beach Volleyball is a platform designed for locals in Smiths Gro
 
 ## Contribution
 
-Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+If you'd like to contribute to Highpoint Volleyball, please feel free to fork the repository and submit a pull request, or open an issue for any bugs or feature requests.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-## Screenshots
-
-Include some screenshots of your app here.
-
 ## Links
 
 - [Deployed Link](<https://aqueous-lake-05128-c423d9ea8df1.herokuapp.com/>)
-- [GitHub Repository](<[link-to-github-repository](https://github.com/amaraceresi/highpoint-volleyball)>)
+- [GitHub Repository](<https://github.com/amaraceresi/highpoint-volleyball>)
 
 ## Authors
 
