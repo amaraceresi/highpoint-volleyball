@@ -45,11 +45,11 @@ Highpoint Grove Beach Volleyball is a platform designed for locals in Smiths Gro
 
 ## Contribution
 
-If you'd like to contribute to Highpoint Volleyball, please feel free to fork the repository and submit a pull request, or open an issue for any bugs or feature requests.
+If you'd like to contribute to Highpoint Grove Beach Volleyball, please feel free to fork the repository and submit a pull request, or open an issue for any bugs or feature requests.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License.
 
 ## Links
 
